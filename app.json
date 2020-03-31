@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/demo/demo",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "智慧屏入库小程序",
+    "navigationBarTextStyle": "black"
+  },
+    
+  "sitemapLocation": "sitemap.json"
+}

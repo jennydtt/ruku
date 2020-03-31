@@ -1,0 +1,57 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<view class="wrapper">
+  <view class='backbone-tab'>
+  <text class='menu-item {{tabArr.currentId==0?"active":""}}' id='0' data-id='0' bindtap='tab'>笔记</text>
+  <text class='menu-item {{tabArr.currentId==1?"active":""}}' id='1' data-id='1' bindtap='tab'>收藏</text>
+  <text class='menu-item {{tabArr.currentId==2?"active":""}}' id='2' data-id='2' bindtap='tab'>活动</text>
+  <text class='menu-item {{tabArr.currentId==3?"active":""}}' id='3' data-id='3' bindtap='tab'>关于我</text>
+  <text class='more-menu'>更多</text>
+</view>
+<!-- 选项对应的内容 只是举例  -->
+<!-- <view class='content-item {{tabArr.currentBdid==1?"active":""}}'>
+    <view class='notes-header'>
+      <view>
+        <text>所有笔记</text>
+      </view> 
+      <text bindtap='noteslist'>更多</text> 
+    </view>
+ </view> -->
+<!-- <view class='content-item {{tabArr.currentBdid==2?"activeItem":""}}'>
+  <view>
+    <view>
+    <text>所有笔记</text>
+    </view>
+    <view>
+     <text bindtap='more'>查看更多</text>
+    </view>
+  </view>
+</view>  -->
+<!-- 选项卡切换 -->
+<swiper current="{{tabArr.currentId}}" duration="300" bindchange="changes">
+  <swiper-item>
+     <text>产品</text>
+  </swiper-item>
+  <swiper-item>
+     <text>金融</text>
+  </swiper-item>
+  <swiper-item>
+     <text>理财</text>
+  </swiper-item>
+  <swiper-item>
+     <text>分类</text>
+  </swiper-item>
+</swiper>
+</view>
+

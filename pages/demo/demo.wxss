@@ -1,0 +1,61 @@
+/* pages/demo/demo.wxss */
+page{
+  width: 100%
+}
+.btnScan{
+  width: 100%;
+  margin-top: 80rpx;
+}
+.btn{
+  width: 70%;
+  height: 120rpx;
+  line-height: 120rpx
+}
+.picker{
+  margin-top: 60rpx;
+}
+.select_box {
+    background-color: #eee;
+    padding: 0 10rpx;
+    width: 280rpx;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    animation: myfirst 0.5s;
+}
+.list-msg {
+    padding: 0 20rpx;
+    background-color: #fff;
+    position: relative;
+} 
+.list-msg .list-msg2 {
+    width: 260rpx;
+    height: 60rpx;
+    display: flex;
+    margin-top:60rpx;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+  
+}
+
+.select_one {
+    height: 60rpx;
+    line-height: 60rpx;
+    border-bottom: 1px solid #ccc;
+}
+.img-wrap{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  border: 2px solid #1e9646;
+  position: relative
+}
+.item-img{
+   width: 150rpx;
+   height: 150rpx;
+   position: absolute;
+   left:24rpx;
+   top:24rpx;
+}

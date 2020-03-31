@@ -1,0 +1,24 @@
+<view class='container'>
+   <view class="img-wrap">
+    <image class='item-img' src="{{imageArray.url}}" mode="{{imageArray.mode}}"></image>
+   </view>
+   
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" range-key="name">
+    <view class="picker">
+       当前选择地点：{{array[index].name}}
+    </view>
+     </picker>
+       <!-- <view class='list-msg'>
+           <view class='list-msg2' bindtap='bindShowMsg'>
+            <text>{{tihuoWay}}</text>
+           </view>
+            <view class="select_box"  wx:if="{{select}}">
+                <view class="select_one" wx:for="{{arrays}}" bindtap="mySelect" data-name="{{item.message}}"> {{item.message}}
+                </view>
+            </view>
+      </view> -->
+    <view class="btnScan" bindtap="clickSaoma">
+       <button type="primary" class="btn">扫一扫</button> 
+    </view>
+    <!-- <view>{{show}}</view>  -->
+</view>
